@@ -1,5 +1,8 @@
 We want something that kind of follows this structure.
 
+To run HTML generator:
+py generate.py
+
 ```
 def RandomHtml():
     yield '<html><body>'
