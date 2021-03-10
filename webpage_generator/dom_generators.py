@@ -39,8 +39,20 @@ def RandomBody():
     yield RandomTableSection()
     for _ in range(randint(3)):
         yield RandomP()
-    while randint(2) == 0:
+        yield RandomForm()
+    while randint(6) == 0:
         yield css_styles.RandomFontInline(RandomBody)
+
+# Geneerate a random form with random input types
+def RandomForm():
+    form_types = ["text", "radio", "checkbox", "date", "email", "file"]
+    yield '<form>'
+    i = randint(8)
+    for _ in range(i):
+        yield f'<label>{lorem.words(randint(5))}</label><br>'
+        yield f'<input type="{form_types[randint(len(form_types))]}" value="{lorem.words(randint(5))}"/><br>'
+    yield '<input type="submit" value="Submit">'
+    yield '</form>'
 
 # Generate random navigation bar at the top of an HTML page
 def RandomNavBar():
@@ -94,7 +106,7 @@ def RandomCols(cols):
     # We have the widths that sum to 12, time to make them
     for width in widths:
         yield '<td class="col-{}">'.format(width)
-        yield lorem.words(randint(10))
+        yield lorem.words(randint(1, 10))
         yield '</td>'
 
 # Generate a random header with 1-5 words
@@ -106,5 +118,10 @@ def RandomH1():
 # Generate a random paragraph
 def RandomP():
     yield '<p>'
-    yield lorem.paragraph()
+    p = lorem.paragraph().split(" ")
+    # =< 10% of the paragraph will have links
+    num_of_links = (int) (0.10 * len(p))
+    for _ in range(num_of_links):
+        p[randint(len(p))] = '<a href="#">' + lorem.words(randint(5)) + '</a>'
+    yield ' '.join(p)
     yield '</p>'
