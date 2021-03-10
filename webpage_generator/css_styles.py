@@ -7,7 +7,10 @@ FONT_LIST = [
     "DotGothic16",
     "Lato",
     "Roboto Mono",
-    "Stick"
+    "Stick",
+    "Pacifico",
+    "Indie Flower",
+    "Amatic SC"
 ]
 
 # Pick a random font for page
@@ -22,5 +25,3 @@ def RandomFontInline(element):
     yield f'<div style="font-family: \'{font}\', serif;">'
     yield element()
     yield '</div>'
-
-
