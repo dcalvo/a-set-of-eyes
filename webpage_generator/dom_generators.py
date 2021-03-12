@@ -56,7 +56,10 @@ def RandomForm():
     for _ in range(randint(15)):
         yield f'<label>{Lorem(5)}</label><br>'
         field_type = form_types[randint(len(form_types))]
-        yield f'<input type="{field_type}" value="{Lorem(5)}"/><br>'
+        if field_type == "date":
+            yield f'<input type="{field_type}" value=""/><br>'
+        else:
+            yield f'<input type="{field_type}" value="{Lorem(5)}"/><br>'
         yield [f'{field_type},\n']
     yield '<input type="submit" value="Submit">'
     yield ['submit-btn,\n']
@@ -109,7 +112,7 @@ def RandomHeader():
 
 # Generate a random paragraph
 def RandomParagraph():
-    yield ['text{\n']
+    yield ['text,\n']
     yield '<p>'
     p = lorem.paragraph().split(" ")
     # =< 10% of the paragraph will have links
@@ -118,14 +121,13 @@ def RandomParagraph():
         p[randint(len(p))] = f'<a href="#">{Lorem(5)}</a>'
     yield ' '.join(p)
     yield '</p>'
-    yield ['}\n']
 
 # TODO: clean up please.
 def RandomNavBar():
     styles = [('navbar-light', 'bg-light'), ('navbar-dark', 'bg-dark')]
     style = styles[randint(len(styles))]
     yield f'<nav class="navbar navbar-expand-lg {styles[0]} {styles[1]}">'
-    yield ['navbar {\n  ']
+    yield ['navbar {\n']
     yield f'<a class="navbar-brand" href="#">{Lorem(3)}</a>'
     yield ['logo,\n']
     yield '<div class="collapse navbar-collapse" id="navbarSupportedContent">'

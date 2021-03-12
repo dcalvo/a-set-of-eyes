@@ -1,2 +1,5 @@
 .vscode
-webpage_generator/index.html
+webpage_generator/__pycache__
+webpage_generator/gui/*
+webpage_generator/html/*
+webpage_generator/png/*
