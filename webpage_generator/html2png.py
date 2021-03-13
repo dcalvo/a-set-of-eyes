@@ -12,7 +12,7 @@ driver = webdriver.Chrome(executable_path="C:/tools/chromedriver.exe", options=c
 # Input and output directories
 html_dir = 'file:///' + os.path.join(sys.path[0], "html")
 out_dir = os.path.join(sys.path[0], "png")
-num_of_samples = 100 # number of gui/png pairs to generate
+num_of_samples = 10000 # number of gui/png pairs to generate
 
 for i in range(num_of_samples):
     id = str(i).zfill(len(str(num_of_samples)))

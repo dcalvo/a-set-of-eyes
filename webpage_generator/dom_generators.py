@@ -33,7 +33,7 @@ def RandomHtml():
     <body>
     '''
     # TODO: Change DSL defition for this?
-    yield ['body{\n']
+    yield ['body {\n']
     # TODO: See if generated elements can be more reader friendly? 
     yield GenerateRandomSection()
     yield ['}']
@@ -69,7 +69,7 @@ def RandomForm():
 # Generate a random table
 def RandomTable():
     yield '<table class="table table-bordered container">'
-    yield ['table{\n']
+    yield ['table {\n']
     rows = randint(1, 5)
     for _ in range(rows):
         yield RandomRow()
