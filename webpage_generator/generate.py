@@ -20,7 +20,7 @@ def generate(fname, verbose):
     # Sample run:
     # py generate.py sample1
     with open(os.path.join(sys.path[0], "html", f'{fname}.html'), 'w') as html, open(os.path.join(sys.path[0], "gui", f'{fname}.gui'), 'w') as dsl:
-        Output(dom_generators.RandomHtml(), html, dsl, verbose)
+        Output(dom_generators.GenerateRandomSection(), html, dsl, verbose)
 
 if __name__ == '__main__':
     fname = "index" if len(sys.argv) == 1 else sys.argv[1]

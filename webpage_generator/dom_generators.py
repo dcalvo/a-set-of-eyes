@@ -178,6 +178,6 @@ def GenerateRandomSection():
     # Random alignment
     # TODO: See if possible to nest generator calls
     yield css_styles.RandomAlign(RANDOM_SECTIONS[randint(NUM_OF_SECTIONS)])
-    if randint(10) <= 8:
-        # 80% chance a new section will be added
-        yield GenerateRandomSection()
+    # if randint(10) <= 8:
+    #     # 80% chance a new section will be added
+    #     yield GenerateRandomSection()
