@@ -1,0 +1,11 @@
+Turn NVDA on -> Control + Alt + N 
+
+Launching Chrome:
+One way to Launch Chrome, is to press the Windows key or CTRL+Escape and type Chrome in the search edit field, and press enter when you hear JAWS say Chrome
+
+Bringing up a web site.
+Press CTRL+L or Alt+D
+and type the following:
+www.newyorktimes.com
+All navigation commands like: H for heading, E for edit field, C for combo box, and so on all work just the same in Chrome.
+

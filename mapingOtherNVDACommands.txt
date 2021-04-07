@@ -1,0 +1,42 @@
+
+Key Command: Desired Function: Potential Speech Mapping
+
+control:stop:“Stop”, “pause”
+
+Insert + down arrow:Read continuously from the current position:“Read”, “continue”, “begin” 
+
+shift:previous:“previous”
+
+Tab:Go to next focusable element:“Next”, “next element”
+
+Shift + tab :Go to previous focusable element:“Previous”, “previous element” 
+
+Enter:Activate a button or link:“Link”,”button”, "enter" 
+
+H:Go to next heading:“Heading”, “next heading”
+
+Shift + H:Go to previous heading:“previous heading”
+
+1-6:Go to next heading of a specific level (1 - 6):“1”,”2”,”3”,”4”, “5”, “6” 
+
+Shift + 1- 6:Go to previous heading of a specific level (1 - 6)
+
+L:Go to next list:“List”, “next list” 
+
+Shift + L:Go to previous list:“Previous list”
+
+I:Go to next list item:“List”, “next list item”, “next item”, “item” 
+
+Shift + I:Go to previous list item:“Previous list item”, “last item”
+
+F:Go to next form element:“Form”, “next form”
+
+Shift + F: Go to previous form element: "Previous form", "last form"
+
+D: Go to next region (ARIA or HTML5 landmark): "Next region", "region"
+
+Shift + D: Go to previou region (ARIA or HTML5 landmark): "Previous region", "last region"
+
+
+
+
