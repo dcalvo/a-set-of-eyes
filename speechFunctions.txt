@@ -1,0 +1,13 @@
+defined library of what we can do: 
+
+Asoe _______:
+
+go to  
+read me  
+next section/ heading
+skip to next section/ heading 
+back a page 
+forward a page
+Refresh 
+New window 
+Read me all the headings 
