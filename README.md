@@ -10,3 +10,10 @@ Our solution leverages computer vision to democratize the screen reader user exp
 All screen readers operating on the Microsoft Windows OS must use Microsoft UI Automation and IAccessible2 in order to perform their functionality. Microsoft is closing these APIs next year, thereby drastically limiting the ability for third-party screen readers to operate. Our AI-powered screen reader uses computer vision to directly view the screen and bypass this requirement.
 
 We will also want to provide a more intuitive interface that doesn’t require a user to remember a plethora of commands. 
+
+## NVDA Commands 
+Commands and information on how to use NVDA compiled from: 
+https://www.nvaccess.org/files/nvdaTracAttachments/455/keycommands%20with%20laptop%20keyboard%20layout.html
+https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts
+https://webaim.org/articles/nvda/
+
