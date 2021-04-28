@@ -85,6 +85,29 @@ def get_best_match_websites(popular_websites, spoken_website_name):
 			best_pop_website_url_match = popular_websites[curr_pop_website]
 	return best_pop_website_url_match
 
+#helper function for NVDA mapping of commands
+def get_speech_mappings(text_file):
+	''' takes a text file of mappings and converts to an actual mapping.
+		Returns:
+			a dictionary
+	'''
+	m = {}
+	with open(text_file, "r") as mapping:
+		lst = mapping.readlines()
+		for ls in lst:
+			if ls == '\n':
+				continue
+			keys_and_commands = ls.split(":")
+			key = keys_and_commands[0]
+			command_keywords = keys_and_commands[2].split(",")
+			m[key] = command_keywords
+
+	return m
+
+
+		
+
+
 def main():
 	# Initialize the recognizer
 	r = sr.Recognizer()
