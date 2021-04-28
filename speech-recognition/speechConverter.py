@@ -104,6 +104,28 @@ def get_speech_mappings(text_file):
 
 	return m
 
+# now that we have a mapping of all the commands, 
+# we can simply say that if the text corresponds to a command set
+# we execute the mapping NVDA command
+# 
+def map_command(mappings, text):
+	# discern the best guess of what the text is asking for based on 
+	# the highest similarity score
+	best_score = -1
+	best_command = ""
+	for curr_mapping in mappings:
+		set_of_commands = curr_mappings[mapping]
+		if text in set_of_commands:
+			for command in set_of_commands:
+				curr_score = SequenceMatcher(None, text, command).ratio()
+				if best_score == -1 or best_score < curr_score:
+					best_score = curr_score
+					best_command = curr_mapping
+
+	return best_command
+		
+
+
 
 		
 
