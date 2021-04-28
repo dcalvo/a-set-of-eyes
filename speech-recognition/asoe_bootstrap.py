@@ -4,11 +4,15 @@ import multiprocessing
 import time
 import speechConverter as speech_py
 
+# This script runs NVDA and the speech recognition script in parallel.
+
 NVDA_EXE_PATH = "/Program Files (x86)/NVDA/nvda.exe"
 
+# Run NVDA Executable
 def runNVDA():
     subprocess.call([NVDA_EXE_PATH], shell=True)
 
+# Run Speech Recognition script
 def runSpeechRecognition():
     speech_py.main()
 
@@ -27,13 +31,15 @@ def main():
         speech_recognition = multiprocessing.Process(target=runSpeechRecognition)
         speech_recognition.start()
         while True:
+            # TODO: Find a way to interrupt execution asynchrously
             should_quit = input("Press q to quit")
             if should_quit.lower() == "q":
                 speech_recognition.join()
                 nvda.join()
                 print("Closing program")
                 return
-
+    else: 
+        print("Unable to find NVDA executable... Closing program")
 
 
 
