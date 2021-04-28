@@ -1,0 +1,52 @@
+Key Commands Compiled from: 
+https://www.nvaccess.org/files/nvdaTracAttachments/455/keycommands%20with%20laptop%20keyboard%20layout.html
+https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts
+https://webaim.org/articles/nvda/
+
+
+ASoE Defined Command Dictionary 
+
+ASoE On 
+Turn NVDA on 
+>Control + Alt + N
+
+read/read me  
+“Read Me” -> Begins reading the screen where ever you are 
+> Insert + down arrow 
+
+
+go to  
+“Go To _______” -> navigates to a certain specified portion of the screen 
+example input: 
+Go to heading 
+>H 
+Go to Form 
+> F
+go to Table 
+>T
+Go to Button 
+> B 
+Go to Graphic 
+>G 
+
+stop/stop reading 
+> control
+
+search for a particular word and start reading from there 
+> Insert + Ctrl + F
+> Insert +  down arrow 
+
+New window 
+>Ctrl+N
+
+Read me all the headings 
+> Insert + F7
+
+Refresh 
+refreshes the current page that you are on 
+>control R 
+
+ASoE Off
+Turns NVDA off
+> Insert + Q
+
