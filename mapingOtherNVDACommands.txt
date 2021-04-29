@@ -35,7 +35,9 @@ Shift + F: Go to previous form element: "Previous form", "last form"
 
 D: Go to next region (ARIA or HTML5 landmark): "Next region", "region"
 
-Shift + D: Go to previou region (ARIA or HTML5 landmark): "Previous region", "last region"
+Shift + D: Go to previous region (ARIA or HTML5 landmark): "Previous region", "last region"
+
+Control + Alt + N: start NVDA: "NVDA", "Start NVDA"
 
 
 
